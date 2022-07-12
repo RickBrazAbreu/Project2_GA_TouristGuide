@@ -20,13 +20,40 @@ Page Showing post:
 - Show picture of the places
 - Name of the place and Description
 
-PLanning:
-
-|  name     |  String,
-|  address  |  String,
-|  free     |  Boolean
 
 
+///////////////////////////////////
+////////-----------------////////////////////
+////////////////////////////////////
+
+
+-------------------PLANNING--------------
+MOdels/Seeds:
+|  name     |  String   |
+|  address  |  String   |
+|  free     |  Boolean  |
+
+
+----------------------------------------------
+Models/Places:
+|   name     | String   |
+|   address  | String   |
+|   free     | Boolean  |
+
+----------------------------------------------
+
+Model/User.js
+ username: {
+    |    type      |  String  |
+    |   required  |  true    |  
+    |   unique    |  true    |
+   
+    password:
+    |   type      | String  |
+    |   required  | true    |
+
+
+---------------------------------------------------
 
 
 
