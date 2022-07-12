@@ -20,6 +20,13 @@ Page Showing post:
 - Show picture of the places
 - Name of the place and Description
 
+PLanning:
+
+|  name     |  String,
+|  address  |  String,
+|  free     |  Boolean
+
+
 
 
 
