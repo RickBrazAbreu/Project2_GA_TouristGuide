@@ -43,7 +43,7 @@ Models/Places:
 ----------------------------------------------
 
 Model/User.js
- username: {
+    username:
     |    type      |  String  |
     |   required  |  Boolean   |  
     |   unique    |  Boolean    |
