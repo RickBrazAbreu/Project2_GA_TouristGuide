@@ -45,12 +45,12 @@ Models/Places:
 Model/User.js
  username: {
     |    type      |  String  |
-    |   required  |  true    |  
-    |   unique    |  true    |
+    |   required  |  Boolean   |  
+    |   unique    |  Boolean    |
    
     password:
     |   type      | String  |
-    |   required  | true    |
+    |   required  | Boolean    |
 
 
 ---------------------------------------------------
