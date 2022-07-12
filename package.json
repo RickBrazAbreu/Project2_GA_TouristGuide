@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "express": "^4.18.1",
+    "liquid-express-views": "^1.0.8"
+  },
+  "name": "project2_ga_touristguide",
+  "description": "Second Project made on Unit2 GA",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RickBrazAbreu/Project2_GA_TouristGuide.git"
+  },
+  "keywords": [
+    "\"Project2"
+  ],
+  "author": "\"Henrique Abreu\"",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RickBrazAbreu/Project2_GA_TouristGuide/issues"
+  },
+  "homepage": "https://github.com/RickBrazAbreu/Project2_GA_TouristGuide#readme"
+}
