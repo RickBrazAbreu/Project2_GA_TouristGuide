@@ -4,14 +4,15 @@ const router = express.Router()
 //edit insert or delete
 const Place = require('../models/place')
 
-//get - index it will show your places
+//GET - index it will show your places
 // localhost:3000/places
 router.get('/', (req,res) => {
     //mongose to finde all th  places
     Place.find({})
     //retunr places as json
-    .then(place => {
-        res.json(fruit)
+    .then(places => {
+        // res.json(fruit)
+        res.render('places/index', { places})
     })
     .catch(err => {
         res.json(err)

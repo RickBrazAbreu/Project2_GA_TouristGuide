@@ -1,0 +1,10 @@
+{% layout 'layout.liquid' %}
+
+{% block content %}
+<div>
+    {% for place in places %}
+    <p>Place name:{{place.name}}</p>
+    <p>Place address: {{place.address}}</p>
+    {% endfor %}
+</div>
+{% endblock %}
