@@ -8,7 +8,8 @@ const {Schema, model } = mongoose
 const placesSchema = new Schema({
  name: String,
  address: String,
- free: Boolean
+ free: Boolean,
+ like: Number
 
 },{
     timestamps: true
