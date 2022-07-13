@@ -19,11 +19,17 @@ router.get('/seed', (req,res) => {
     //delete if we have PLACES
     Place.deleteMany({})
     // insertnew Places
-    .then()
-    .then()
-    .catch()
+    .then( () => {
+        Place.create(startPlaces) // here putting info inside the array of startPlaces 
+        //return this data as json
+        .then(data => {
+            res.json(data)
+        })
+        .catch(console.error)
+    })
     
-    // return this data as json to view
+    
+    
 })
 
 module.exports = router
