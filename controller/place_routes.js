@@ -10,7 +10,7 @@ router.get('/', (req,res) => {
     //mongose to finde all th  places
     Place.find({})
     //retunr places as json
-    .then(fruit => {
+    .then(place => {
         res.json(fruit)
     })
     .catch(err => {
