@@ -1,6 +1,40 @@
 # Project2_GA_TouristGuide
 Second Project made on Unit2 GA
 
+-------------------------------------------------------------------------
+- as a user I would like to see my posts
+- as a user I would like to click and see details of my post
+- as a user I would like to insert new posts
+- as a user I would like to delete posts
+- as a user I would like to edit posts
+- as a user I would like to see a picture of the places
+- as a user I would like to siginup to my acount
+- as a user I would like to login to my account and log out
+- as a user I would like to add comments/ delete / edits
+
+
+
+
+
+-------------------------------------------------------------------------
+- create the seeds
+- create routes
+- create 1st page
+- create posts
+- create html for the screen
+- create login signup and logout
+
+
+-------------------------------------------------------------------------
+
+
+
+
+
+
+
+-------------------------------------------------------------------------
+
 Page1:
 - This page will hold all the posts
 - Show Button Home and Searchbar
@@ -19,6 +53,12 @@ Page6:
 Page Showing post:
 - Show picture of the places
 - Name of the place and Description
+
+
+
+
+
+
 
 
 
