@@ -1,0 +1,13 @@
+{% layout 'layout.liquid' %}
+
+{% block content %}
+<!-- CREATING -->
+<form action="/places" method="POST"> <!--POST using to ceating-->
+    <input type="text" name="name"  placeholder="enter name">
+    <input type="text" name="address"  placeholder="enter address">
+    <input type="checkbox" name="free"  placeholder="enter name">
+    <input type="submit" value="Create New Place">
+</form>
+<!-- ///////////// -->
+
+{% endblock %}
