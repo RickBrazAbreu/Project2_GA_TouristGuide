@@ -3,4 +3,4 @@ const startplaces = [
     { name: "Pier 39", address: "San Francisco" ,free: true}
 ]
 
-module.exports = startplaces
+module.exports = startplaceso
