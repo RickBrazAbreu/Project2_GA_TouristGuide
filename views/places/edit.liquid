@@ -1,0 +1,14 @@
+{% layout 'layout.liquid' %}
+
+{% block content %}
+<!-- CREATING -->
+<form action="/places/{{places._id}}?_method=PUT" method="POST"> <!--POST using to ceating-->
+    <input type="text" name="name"  placeholder="enter name">
+    <input type="text" name="address"  placeholder="enter address">
+    
+    <input type="checkbox" name="free" value="Free" >
+    <input type="submit" value="Edit Place">
+</form>
+<!-- ///////////// -->
+
+{% endblock %}

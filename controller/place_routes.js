@@ -10,8 +10,34 @@ const Place = require('../models/place')
 /////////////////////////
 ///////////////////////////////////
 
+//GET route for displaying an update from
+router.get('/:id/edit', (req,res) => {
+    const placeId = req.params.id
+
+    Place.findById(placeId)
+        .then(place => {
+            res.render('places/edit', { place})
+        })
+        .catch(err =>{
+            res.json(err)
+        })
+})
 
 
+
+//PUT - UpDAte
+
+
+
+
+
+
+
+
+
+//////////////////////////
+/////////////////////////
+///////////////////////////////////
 
 
 
@@ -40,9 +66,6 @@ router.post('/', (req,res) =>{
             res.json(err)
         })
 })
-
-
-
 
 
 
