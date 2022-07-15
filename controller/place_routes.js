@@ -6,6 +6,25 @@ const Place = require('../models/place')
 
 
 
+
+//////////////////////////
+/////////////////////////
+///////////////////////////////////
+
+//DELETE -Delete  ///this is coming from show.liquid
+router.delete('/:id', (req,res) =>{
+ const placeId = req.params.id
+
+ Place.findByIdAndDelete(placeId)
+    .then(place =>{
+        res.redirect('/places') // home page
+    })
+    .catch(err => {
+        res.json(err)
+    })
+})
+
+
 //////////////////////////
 /////////////////////////
 ///////////////////////////////////
@@ -27,7 +46,22 @@ router.get('/:id/edit', (req,res) => {
 
 //PUT - UpDAte
 
+router.put('/:id', (req,res) =>{
+    const placeId = req.params.id
 
+    ////// basically here is a boolean ... 
+    req.body.free = req.body.free === 'on' //if free is checked...
+    ? true : false //turn on or false
+    //////
+
+    Place.findByIdAndUpdate(placeId, req.body, { new: true })
+    .then( place => {
+        res.redirect(`/places/${place._id}`)
+    })
+    .catch( err => {
+        res.json(err)
+    }) 
+})
 
 
 

@@ -6,7 +6,7 @@
     {% for place in places %}
     <a href="/places/{{place._id}}">Place name:{{place.name}}</a> <!--with this link href you can open individualy each places info-->
     <p>Address: {{place.address}}</p>
-    <p>Likes: {{place.likes}}</p>
+    <p>Likes: {{place.like}}</p>
     <p>Free: {{place.free}}</p>
     <!-- <p>Place id: {{ place._id }}</p> --> <!--//here ao inves de chamar e msotrar o id ... ele te direciona para places/place._id usando o link ao clickar no nome-->
     {% endfor %}

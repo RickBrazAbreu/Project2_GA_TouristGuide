@@ -2,11 +2,11 @@
 
 {% block content %}
 <!-- CREATING -->
-<form action="/places/{{places._id}}?_method=PUT" method="POST"> <!--POST using to ceating-->
-    <input type="text" name="name"  placeholder="enter name">
-    <input type="text" name="address"  placeholder="enter address">
+<form action="/places/{{place._id}}?_method=PUT" method="POST"> <!--POST using to ceating-->
+    <input type="text" name="name"  placeholder="enter name" value="{{place.name}}">
+    <input type="text" name="address"  placeholder="enter address" value="{{place.address}}">
     
-    <input type="checkbox" name="free" value="Free" >
+    <input type="checkbox" name="free" value="Free" {% if place.free %} checked {% endif %} >
     <input type="submit" value="Edit Place">
 </form>
 <!-- ///////////// -->
