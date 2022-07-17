@@ -20,7 +20,8 @@ app.use('/users', userRoutes) // you called the placesRoutes to run on the local
 
 
 app.get('/', (req, res) => {
-    res.send('your server is running, better go catch it')
+    //res.send('your server is running, better go catch it')
+    res.redirect('/places')
 
 })
 
