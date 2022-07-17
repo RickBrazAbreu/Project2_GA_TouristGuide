@@ -1,6 +1,11 @@
 body{
-    background-color: rgb(148, 184, 200);
+    background-image: url('https://i.insider.com/5d794b532e22af02917ab373?width=1300&format=jpeg&auto=webp');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+   background-size:cover;
 }
+
+
 
 
 .delete-back{
@@ -30,5 +35,11 @@ body{
 }
 .like-color{
     color: black;
+    font-weight: bold;
+}
+.free-yes-no{
+    position: absolute;
+    bottom: 1px;
+    left: 2px;
     font-weight: bold;
 }
