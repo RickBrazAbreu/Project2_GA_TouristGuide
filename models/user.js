@@ -15,7 +15,7 @@ const userSchema = new Schema({
     username: {
         type: String,
         required: true,
-        unique: true
+        unique: true // this way cant repeate the same user name
     },
     password: {
         type: String,
