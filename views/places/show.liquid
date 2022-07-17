@@ -5,8 +5,9 @@
      <p>Likes: {{place.like}}</p>
      <p>Free: {{place.free}}</p>
      <a href="/places/{{place._id}}/edit">Edit</a>
-     <form action="/places/{{place._id}}?_method=DELETE" method="POST">
-        <input type="submit" value="Delete">
+     <form action="/places/{{place._id}}?_method=DELETE" method="POST" style="display: flex;">
+        <input type="submit" value="Delete" class="nav-link text-light btn btn-info delete-back delete-btn">
+        <a href="/places/" class="nav-link text-light btn btn-info delete-back back-btn" >Back </a>
 
      </form>
 {% endblock %}

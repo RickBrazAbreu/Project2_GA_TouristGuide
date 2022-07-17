@@ -1,3 +1,22 @@
 body{
     background-color: rgb(148, 184, 200);
 }
+
+
+.delete-back{
+    margin: 5px;
+    width: 5rem;
+    background-color: rgb(93, 131, 164);
+}
+.delete-btn:hover{
+    background-color: rgb(240, 48, 19);
+}
+.back-btn:hover{
+    background-color: rgb(46, 224, 26);
+}
+.card {
+    border-radius: 10px;
+    width: 18rem;
+    height: 18rem;
+    margin: 2rem;
+}
