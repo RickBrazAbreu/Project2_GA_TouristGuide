@@ -5,7 +5,8 @@
     "liquid-express-views": "^1.0.8",
     "method-override": "^3.0.0",
     "mongoose": "^6.4.4",
-    "morgan": "^1.10.0"
+    "morgan": "^1.10.0",
+    "multer": "^1.4.5-lts.1"
   },
   "name": "project2_ga_touristguide",
   "description": "Second Project made on Unit2 GA",
@@ -27,6 +28,5 @@
   "bugs": {
     "url": "https://github.com/RickBrazAbreu/Project2_GA_TouristGuide/issues"
   },
-  "homepage": "https://github.com/RickBrazAbreu/Project2_GA_TouristGuide#readme",
-  "devDependencies": {}
+  "homepage": "https://github.com/RickBrazAbreu/Project2_GA_TouristGuide#readme"
 }
