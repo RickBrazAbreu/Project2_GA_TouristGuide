@@ -18,8 +18,8 @@ const db = mongoose.connection
 db.on('open', () => {
     // array of starter fruits
     const startplaces = [
-        { name: "Golden Gate", address: "San Francisco" , likes: 0,free: true},
-        { name: "Pier 39", address: "San Francisco" ,likes: 0,free: true}
+        { name: "Golden Gate", address: "San Francisco" , like: 0,free: true},
+        { name: "Pier 39", address: "San Francisco" ,like: 0,free: true}
     ]
 
     // when we seed data, we usually clear out the db first
