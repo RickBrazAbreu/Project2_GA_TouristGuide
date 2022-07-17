@@ -149,32 +149,44 @@ router.get('/:id', (req, res) => {
 ////////////////////////////////////
 
 
+//WE COMENT EVERYTHING HERE BECAUSE NOW EVERYTHING IS PASSED ON MODELS/SEEDS.JS
+
 //seed route
 //insert many items
-router.get('/seed', (req,res) => {
-    const startPlaces= [
-        {name: "Golden Gate",like: 2 ,address:"San Francisco" , free: true},
-        {name: "Bay Bridge",like: 3 , address:"San Francisco" , free: true},
-        {name: "Pier 39",like: 1 , address:"San Francisco" , free: true},
-        {name: "Alcatraz",like: 6 , address:"San Francisco" , free: false},
+// router.get('/seed', (req,res) => {
+//     const startPlaces= [
+//         {name: "Golden Gate",like: 2 ,address:"San Francisco" , free: true},
+//         {name: "Bay Bridge",like: 3 , address:"San Francisco" , free: true},
+//         {name: "Pier 39",like: 1 , address:"San Francisco" , free: true},
+//         {name: "Alcatraz",like: 6 , address:"San Francisco" , free: false},
 
-    ]
+//     ]
 
-    //delete if we have PLACES
-    Place.deleteMany({})
-    // insertnew Places
-    .then( () => {
-        Place.create(startPlaces) // here putting info inside the array of startPlaces 
-        //return this data as json
-        .then(data => {
-            res.json(data)
-        })
-        .catch(console.error)
-    })
+//     //delete if we have PLACES
+//     Place.deleteMany({})
+//     // insertnew Places
+//     .then( () => {
+//         Place.create(startPlaces) // here putting info inside the array of startPlaces 
+//         //return this data as json
+//         .then(data => {
+//             res.json(data)
+//         })
+//         .catch(console.error)
+//     })
     
     
     
-})
+// })
+
+
+
+
+
+//////////////////////////
+/////////////////////////
+//////////////////////////////////// 
+
+
 
 module.exports = router
 
