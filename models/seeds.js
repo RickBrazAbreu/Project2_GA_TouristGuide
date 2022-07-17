@@ -19,7 +19,9 @@ db.on('open', () => {
     // array of starter fruits
     const startplaces = [
         { name: "Golden Gate", address: "San Francisco" , like: 0,free: true},
-        { name: "Pier 39", address: "San Francisco" ,like: 0,free: true}
+        { name: "Pier 39", address: "San Francisco" ,like: 0,free: true},
+        { name: "Pedro Point", address: "Pacifica" ,like: 5,free: false},
+        { name: "Bay Bridge", address: "North Beach" ,like: 2,free: false}
     ]
 
     // when we seed data, we usually clear out the db first
