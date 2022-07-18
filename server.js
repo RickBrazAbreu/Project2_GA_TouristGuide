@@ -13,6 +13,11 @@ app.use(methodOverride('_method'))
 app.use(express.urlencoded({extended: false}))
 
 app.use(express.static('public'))
+//bring in our sessions middleware
+const session = require('express-session')
+const Mongoose= require('connect-mongo')
+
+
 app.use('/places', placesRoutes) // you called the placesRoutes to run on the localhost:/...places... and this is coming from places_Routes
 app.use('/users', userRoutes) // you called the placesRoutes to run on the localhost:/...places... and this is coming from places_Routes
 
