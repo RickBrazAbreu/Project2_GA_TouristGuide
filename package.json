@@ -33,5 +33,8 @@
   "bugs": {
     "url": "https://github.com/RickBrazAbreu/Project2_GA_TouristGuide/issues"
   },
-  "homepage": "https://github.com/RickBrazAbreu/Project2_GA_TouristGuide#readme"
+  "homepage": "https://github.com/RickBrazAbreu/Project2_GA_TouristGuide#readme",
+  "engines": {
+    "node": "18.3.0" 
+  }
 }
