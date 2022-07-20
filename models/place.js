@@ -10,9 +10,10 @@ const placesSchema = new Schema({
  address: String,
  free: Boolean,
  like: Number,
- username: {
-    type: String,
-    default: ""
+ owner: {
+    type:  Schema.Types.ObjectId , //here will be us to link a id unique number, a single User._id 
+    ref: 'User', //const User = model('User', userSchema) the string of 'User' is how we reference a model
+    
 
 },
 image: String

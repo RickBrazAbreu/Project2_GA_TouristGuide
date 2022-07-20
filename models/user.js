@@ -24,7 +24,7 @@ const userSchema = new Schema({
 })
 
 // make a user model with the userSchema
-const User = model('User', userSchema)
+const User = model('User', userSchema) ///thisi is the reference fo USER
 
 
 ///////////////////////////////////////
