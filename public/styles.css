@@ -5,7 +5,32 @@ body{
    background-size:cover;
 }
 
+.btns-top{
+    width: 5rem;
+    background-color: rgb(6, 58, 93);
+    margin-left: 10px;
+    
+}
+.btn-home-guide{
+    width: 10rem;
+    background-color: rgb(6, 58, 93);
+    margin-left: 10px;
+}
 
+
+.edit-btn{
+    width: 5rem;
+    height: 2rem;
+    margin: 5px;
+    background-color: rgb(93, 131, 164);
+}
+.edit-text{
+    color: white;
+   
+}
+.view-place{
+    background-color: rgb(60, 186, 83);
+}
 
 
 .delete-back{

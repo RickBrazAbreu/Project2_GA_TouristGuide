@@ -2,7 +2,7 @@
 
 {% block content %}
 <div>
-    <h2>PLACES TO VISIT...</h2>
+    <h2>PLACES TO VISIT...{{username}}</h2>
     <div class="row">
             <!-- HERE show the posts, and thing showing with each post  as name:: address:: likes -->
         {% for place in places %}
@@ -10,7 +10,7 @@
             <h5 class="card-header">{{place.name}}</h5>
             <div class="card-body">
 
-                <a href="/places/{{place._id}}" class="btn btn-info">View {{place.name}}</a> <!--with this link href you can open individualy each places info-->
+                <a href="/places/{{place._id}}" class="btn btn-info view-place">View: {{place.name}}</a> <!--with this link href you can open individualy each places info-->
                 <p>Address: {{place.address}}</p>
                 <h5 class="likes-counter like-color" >Likes: {{place.like}}</h5>
                 <!-- <p>Likes: {{place.like}}</p> -->
