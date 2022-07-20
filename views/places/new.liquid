@@ -2,12 +2,17 @@
 
 {% block content %}
 <!-- CREATING -->
-<form action="/places" method="POST"> <!--POST using to ceating-->
+<form action="/places" method="POST" enctype="multipart/form-data"> <!--POST using to ceating-->
+    
     <input type="text" name="name"  placeholder="enter name">
     <input type="text" name="address"  placeholder="enter address">
     <p>Free:<input type="checkbox" name="free"  placeholder="enter name"></p>
      <br>
+
+     <input type="file" name= "image">
     <input type="submit" value="Create New Place">
+
+
 </form>
 <!-- ///////////// -->
 

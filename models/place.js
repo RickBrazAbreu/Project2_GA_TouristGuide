@@ -14,7 +14,8 @@ const placesSchema = new Schema({
     type: String,
     default: ""
 
-}
+},
+image: String
 
 },{
     timestamps: true

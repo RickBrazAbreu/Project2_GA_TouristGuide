@@ -12,18 +12,8 @@
 
                 <a href="/places/{{place._id}}" class="btn btn-info view-place">View: {{place.name}}</a> <!--with this link href you can open individualy each places info-->
                 <p>Address: {{place.address}}</p>
-                <h5 class="likes-counter like-color" >Likes: {{place.like}}</h5>
-                <!-- <p>Likes: {{place.like}}</p> -->
-                <!-- <h6 class="card-title">
-                    {% if place.free %}
-                        Free
-                    {% else %}
-                        Not Free
-                    {% endif %}
-                </h6> -->
-                
-                <!-- <p>Free: {{place.free}}</p> -->
-                <!-- <p>Place id: {{ place._id }}</p> --> <!--//here ao inves de chamar e msotrar o id ... ele te direciona para places/place._id usando o link ao clickar no nome-->
+                <h5 class="likes-counter like-color btn btn-info" >Likes: {{place.like}}</h5>
+                <img src="/views/imgpost/2022-07-20T03:33:06.416Z.jpeg">
             </div>
         </div>
         {% endfor %}

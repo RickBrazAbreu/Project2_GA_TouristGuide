@@ -7,6 +7,24 @@ const app = require('liquid-express-views')(express())
 const placesRoutes = require('./controller/place_routes')
 const userRoutes = require('./controller/user_routes')
 
+
+/////////////////////////////
+
+// //upload pictures
+// const path = require('path')
+
+// app.use('./views/imgpost' ,express.static(path.join (__dirname, './views/imgpost')))
+// app.get('*', (req, res) => {
+// 	res.sendFile(path.join(__dirname, './views/imgpost'))
+// } )
+
+
+
+
+/////////////////////
+
+
+
 app.use(morgan('tiny'))
 app.use(methodOverride('_method'))
 

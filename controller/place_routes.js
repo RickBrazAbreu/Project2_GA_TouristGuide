@@ -5,6 +5,30 @@ const router = express.Router()
 const Place = require('../models/place')
 
 
+//upload pictures
+const path = require('path')
+const multer = require('multer')
+
+
+
+//app.use(express.static(path.join (__dirname, '/../views/imgspost')))
+//////////////////////////
+//////////     Upload picture         ///////////////
+///////////////////////////////////
+const storage = multer.diskStorage({
+    destination: (req, file , cb) => {
+        //where we are storaging this images
+        cb(null,'./views/imgpost' )
+    },
+    filename: (req, file, cb) => {
+        console.log(file)
+        cb(null, new Date().toISOString() + path.extname(file.originalname))
+    }
+
+
+})
+const upload = multer({storage:  storage })
+
 
 
 //////////////////////////
@@ -83,7 +107,7 @@ router.get('/new', (req, res) => {
 })
 
 //POST -CREATE
-router.post('/', (req,res) =>{
+router.post('/', upload.single("image") , (req,res) =>{
     ////// basically here is a boolean ... 
     req.body.free = req.body.free === 'on' //if free is checked...
     ? true : false //turn on or false
