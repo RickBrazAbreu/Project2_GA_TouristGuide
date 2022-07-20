@@ -9,7 +9,12 @@ const placesSchema = new Schema({
  name: String,
  address: String,
  free: Boolean,
- like: Number
+ like: Number,
+ username: {
+    type: String,
+    default: ""
+
+}
 
 },{
     timestamps: true

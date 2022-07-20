@@ -89,6 +89,10 @@ router.post('/', (req,res) =>{
     ? true : false //turn on or false
     //////
 
+    //now we have users..specific places , we have to add a username upon
+    //remember, when we log in  we will save the usernam in the session
+    //HERE LINKING THE USERNAME TO THE PPOST
+    req.body.username = req.session.username
 
     Place.create(req.body)
         .then(place =>{
@@ -125,6 +129,18 @@ router.get('/', (req,res) => {
         res.json(err)
     })
     
+})
+router.get('/mine', (req, res) => {
+    //find the places associate to the log person or user
+    Place.find({username: req.session.username})
+    .then( places => {
+        res.render('places/index', { places })
+    })
+
+    .catch(error => {
+        console.log(error)
+        res.json({error})
+    })
 })
 
 //SHOW

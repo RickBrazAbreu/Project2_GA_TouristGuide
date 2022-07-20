@@ -15,7 +15,21 @@ app.use(express.urlencoded({extended: false}))
 app.use(express.static('public'))
 //bring in our sessions middleware
 const session = require('express-session')
-const Mongoose= require('connect-mongo')
+const MongoStore= require('connect-mongo')
+
+
+// here's the middleware that sets up our sessions
+app.use(
+	session({
+		secret: process.env.SECRET,
+		store: MongoStore.create({
+			mongoUrl: process.env.DATABASE_URI
+		}),
+		saveUninitialized: true,
+		resave: false
+	})
+)
+
 
 
 app.use('/places', placesRoutes) // you called the placesRoutes to run on the localhost:/...places... and this is coming from places_Routes
